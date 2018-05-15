@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Generated 2018-4-6 21:51:29 by Hibernate Tools 5.2.8.Final --><!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping auto-import="true" default-access="property" default-cascade="none" default-lazy="true">
+    <class catalog="goods" dynamic-insert="false" dynamic-update="false" mutable="true" name="bakess.Application" optimistic-lock="version" polymorphism="implicit" select-before-update="false" table="application">
+        <id name="acnum" type="string">
+            <column name="acnum"/>
+            <generator class="assigned"/>
+        </id>
+        <property generated="never" lazy="false" name="boss" optimistic-lock="true" type="string" unique="false">
+            <column name="boss"/>
+        </property>
+        <property generated="never" lazy="false" name="phone" optimistic-lock="true" type="string" unique="false">
+            <column name="phone"/>
+        </property>
+        <property generated="never" lazy="false" name="goods" optimistic-lock="true" type="string" unique="false">
+            <column name="goods"/>
+        </property>
+        <property generated="never" lazy="false" name="start" optimistic-lock="true" type="string" unique="false">
+            <column name="start"/>
+        </property>
+        <property generated="never" lazy="false" name="destination" optimistic-lock="true" type="string" unique="false">
+            <column name="destination"/>
+        </property>
+        <property generated="never" lazy="false" name="drivernum" optimistic-lock="true" type="string" unique="false">
+            <column name="drivernum"/>
+        </property>
+        <property generated="never" lazy="false" name="statue" optimistic-lock="true" type="string" unique="false">
+            <column name="statue"/>
+        </property>
+        <property generated="never" lazy="false" name="car" optimistic-lock="true" type="string" unique="false">
+            <column name="car"/>
+        </property>
+        <property generated="never" lazy="false" name="weight" optimistic-lock="true" type="java.lang.Double" unique="false">
+            <column name="weight" precision="255" scale="10"/>
+        </property>
+        <property generated="never" lazy="false" name="lockversion" optimistic-lock="true" type="java.lang.Integer" unique="false">
+            <column name="lockversion"/>
+        </property>
+        <property generated="never" lazy="false" name="lat" optimistic-lock="true" type="string" unique="false">
+            <column name="lat" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="longt" optimistic-lock="true" type="string" unique="false">
+            <column name="longt" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="latdes" optimistic-lock="true" type="string" unique="false">
+            <column name="latdes" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="longdes" optimistic-lock="true" type="string" unique="false">
+            <column name="longdes" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="receiver" optimistic-lock="true" type="string" unique="false">
+            <column name="receiver" not-null="true"/>
+        </property>
+        <property generated="never" lazy="false" name="recephone" optimistic-lock="true" type="string" unique="false">
+            <column name="recephone" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>
